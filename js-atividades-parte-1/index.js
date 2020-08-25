@@ -66,6 +66,13 @@ const ouvirEstrelas = `
     Capaz de ouvir e de entender estrelas."
 `
 
+
+/**
+ * Função que recebe um texto e retorna a quantidade de ocorrencias
+ * de palavras no texto que estão no dicionario
+ * 
+ * @param {*} text texto a ser analisado
+ */
 function dictionaryWordCounter(text) {
     var counter = 0
     var lowerCaseText = text.toLowerCase()
@@ -82,9 +89,9 @@ function dictionaryWordCounter(text) {
     return counter
 }
 
-var scoreLinguaPortuguesa = dictionaryWordCounter(linguaPortuguesa)
+const scoreLinguaPortuguesa = dictionaryWordCounter(linguaPortuguesa)
 console.log('\nLingua Portuguesa possui ' + scoreLinguaPortuguesa + ' ocorrências')
-var scoreOuvirEstrelas = dictionaryWordCounter(ouvirEstrelas)
+const scoreOuvirEstrelas = dictionaryWordCounter(ouvirEstrelas)
 console.log('\nOuvir Estrelas possui ' + scoreOuvirEstrelas + ' ocorrências')
 
 
